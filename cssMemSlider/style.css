@@ -20,8 +20,6 @@
 
 input {
   display: none;
-  /*width: 0;
-  height: 0;*/
 }
 
 .slider {
@@ -39,7 +37,6 @@ input {
   width: 100%;
   flex-shrink: 0;
   transition: all 0.3s ease;
-  /*transition: 0.3s ease-in-out;*/
 }
 
 .slide-item > img {
@@ -63,7 +60,6 @@ input {
   width: 100%;
   flex-shrink: 0;
   transition: all 0.3s ease;
-  /*transition: 0.3s ease-in-out;*/
 }
 
 .navigation__slider {
@@ -81,7 +77,6 @@ input {
   display: flex;
   justify-content: center;
   transition: all 0.3s ease;
-  /*transition: 0.3s ease-in-out;*/
 }
 
 .label__container:hover span {
@@ -89,18 +84,17 @@ input {
 }
 
 .label__container:active span {
-  background: #94d2f5;
+  background: #00ff00;
 }
 
 label {
-  width: 5rem;
+  width: 4rem;
 }
 
 span {
-  display: block;
-  width: 2rem;
-  height: 2rem;
-  background-color: #d16ba5;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #008b8b;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -109,9 +103,9 @@ span {
 #slide2:checked ~ .slider .label2 span,
 #slide3:checked ~ .slider .label3 span,
 #slide4:checked ~ .slider .label4 span {
-  background: #aa85d3;
-  transform: scale(0.8);
-  border: 2px solid #bfe9ff;
+  background: #fa8072;
+  border: 2px solid #fff;
+  transform: scale(1.2);
 }
 
 #slide1:checked ~ .slider .slide,
@@ -133,18 +127,25 @@ span {
 #slide4:checked ~ .slider p {
   transform: translateX(-300%);
 }
-
-@media screen and (max-width: 62.813rem) {
+/*1008px*/
+@media screen and (max-width: 63rem) {
   .description__slider {
     flex-direction: column-reverse;
+    /*direction: rtl;*/
     align-items: center;
   }
 
   .navigation__slider {
-    padding-top: 0;
+    padding-top: 0.5rem;
+  }
+
+  .texts__slider > p {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
   }
 }
-
+/*767px*/
 @media screen and (max-width: 47.938rem) {
   .texts__slider > p {
     font-size: 1.5rem;
